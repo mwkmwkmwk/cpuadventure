@@ -20,3 +20,8 @@ you cannot read the `emu` file.
 
 To solve the task, you have to win the game without using the "(C)HEAT"
 option.
+
+The author's solution is in h4x.py.  You can use it as follows:
+
+$ socat tcp4-listen:1234,fork,reuseaddr exec:./emu\ game.bin\ flag.txt,pty,setsid,setpgid,ctty,stderr,rawer
+$ ./h4x.py 127.0.0.1 1234
