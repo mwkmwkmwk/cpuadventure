@@ -9,10 +9,8 @@ the running copy on server you can talk to.
 If you want to solve it the intended way, do the following:
 
 ```
-
 $ make
 $ ./emu ./game.bin ./flag.txt
-
 ```
 
 You can play the game, and you can inspect the `game.bin` file, but pretend
@@ -23,5 +21,7 @@ option.
 
 The author's solution is in h4x.py.  You can use it as follows:
 
+```
 $ socat tcp4-listen:1234,fork,reuseaddr exec:./emu\ game.bin\ flag.txt,pty,setsid,setpgid,ctty,stderr,rawer
 $ ./h4x.py 127.0.0.1 1234
+```
