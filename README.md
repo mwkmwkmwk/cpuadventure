@@ -19,6 +19,20 @@ you cannot read the `emu` file.
 To solve the task, you have to win the game without using the "(C)HEAT"
 option.
 
+The original task description from the CTF is:
+
+```
+My grandfather used to design computers back in the 60s.  While cleaning out
+his attic, I found a strange machine.  Next to the machine, I found a deck of
+punched cards labeled "Dragon Adventure Game".  After some time, I managed to
+hook it up to modern hardware, but the game is too hard and I cannot get to
+the end without cheating.  Can you help me?
+
+I'm attaching a transcription of the punched cards used by the machine.  The
+machine proudly claims to have 4 general purpose registers, 1kiB of data memory,
+and 32kiB of instruction memory.
+```
+
 The author's solution is in h4x.py.  You can use it as follows:
 
 ```
